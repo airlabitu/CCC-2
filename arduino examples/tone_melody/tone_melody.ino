@@ -23,6 +23,6 @@ void loop() {
 
     tone(soundPin, frequencies[count], noteDuration[count]); // play the note
     
-    interval = rythm[count]; // set tha waiting time until next time to enter the timer if statement
+    interval = rythm[count]; // set the waiting time until next time to enter the timer if statement
   }
 }
