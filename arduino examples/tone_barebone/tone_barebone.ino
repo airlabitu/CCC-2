@@ -1,11 +1,30 @@
+/* Tone - barebone example | AIRLAB CCC#2
+
+   Tone function syntax:
+   Tone(Pin, Frequency, OPTIONAL:Duration)
+
+*/
+
 int soundPin = 8;
 
 void setup() {
-  // put your setup code here, to run once:
   pinMode(soundPin, OUTPUT);
-  tone(soundPin,  440); // setting one frequency 'once'
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  //Version one: The tone overwrites itself:
+  tone(soundPin,  440);
+  delay(500);
+  tone(soundPin,  880);
+  delay(500);
+
+
+
+  //Version two: The tone plays for a short duration:
+  /*
+    tone(soundPin,  440, 250);
+    delay(500);
+    tone(soundPin,  880, 250);
+    delay(500);
+  */
 }
