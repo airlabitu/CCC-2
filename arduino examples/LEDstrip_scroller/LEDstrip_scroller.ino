@@ -1,4 +1,4 @@
-/* LEDstrip Barebone | AIRLAB CCC#2
+/* LEDstrip Scroller | AIRLAB CCC#2
 
    The code provides a scrolling motion on the LED strip
 
